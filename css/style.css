@@ -20,9 +20,13 @@ html{
 ul{
     list-style: none;
 }
+
+.mb-1{
+    margin-bottom: 1em;
+}
 /* MAIN */
 main{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-color: rgb(26, 35, 53);
 }
 
@@ -30,8 +34,9 @@ main{
 .nav-sidebar{
     float: left;
     width: 200px;
-    height: calc(100vh - 100px) ;
-    background-color: black
+    height: calc(100vh - 80px) ;
+    background-color: black;
+    color: gray
 }
 
 .logo{
@@ -41,7 +46,6 @@ main{
 
 .sidebar-icon{
     width: 100%;
-    height: 200px;
     border: 1px solid green;
 }
 
@@ -54,6 +58,7 @@ main{
 .icon{
     margin-bottom: .5em;
 }
+
 .sidebar-icon i{
     margin-left: 1em;
     margin-right: .4em;
@@ -61,9 +66,52 @@ main{
     color: gray; 
 }
 
-.sidebar-icon span{
+.nav-sidebar span{
     font-size: .7em;
-    color: gray;
+}
+
+.sidebar-playlist{
+    width: 100%;
+    height: 300px;
+    margin-left: 1em;
+    border: 1px solid green;
+}
+
+.sidebar-playlist h4{
+    color: white;
+    margin-bottom: .5em;
+}
+
+.new-playlist span{
+    font-weight: bold;
+}
+
+.box{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-color: gray;
+}
+
+#plus{
+    color: black;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+.playlist li{
+    margin-bottom: 1em;
+    font-size: .7em;
+    font-weight: bold;
+}
+
+.sidebar-account{
+    width: 100%;
+    height: 150px;
+    border: 1px solid green;
 }
 /* main content */
 .main-content{
@@ -105,7 +153,7 @@ main{
 }
 /* FOOTER */
 footer{
-    height: 100px;
+    height: 80px;
     background-color: #282828;
     width: 100%;
 }
