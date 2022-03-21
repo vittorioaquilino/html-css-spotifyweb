@@ -8,6 +8,8 @@
 /* COMMON */
 html{
     font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
 }
 
 .clearfix::after{
@@ -15,27 +17,59 @@ html{
     display: table;
     clear: both;
 }
+
+ul{
+    list-style: none;
+}
 /* MAIN */
 main{
     height: calc(100vh - 100px);
     background-color: rgb(26, 35, 53);
 }
 
-
 /* nav */
 .nav-sidebar{
     float: left;
-    width: 15%;
+    width: 200px;
     height: calc(100vh - 100px) ;
     background-color: black
 }
-
+/* main content */
+.main-content{
+    float: left;
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: aquamarine;
+    overflow-y: auto;
+}
 .nav-upgrade{
-    float: right;
     position: fixed;
-    width: 85%;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
     height: 80px;
     background-color: rgba(000, 000, 000, .5);
+}
+
+.main-list{
+    height: 50px;
+    background-color: coral;
+    margin-top: 80px;
+}
+
+.album{
+    height: 300px;
+    background-color: blueviolet;
+}
+
+.created{
+    height: 300px;
+    background-color: lightgreen;
+}
+
+.artist{
+    height: 300px;
+    background-color: gold;
 }
 /* FOOTER */
 footer{
