@@ -26,6 +26,9 @@ a{
     color: inherit;
 }
 
+img{
+    width: 100%;
+}
 .mb-1{
     margin-bottom: 1em;
 }
@@ -56,6 +59,11 @@ main{
     width: 100%;
 }
 
+.sidebar-icon img{
+    width: 20px;
+    margin-left: 1em;
+}
+
 .nav-container span:hover{
     color: white;
 }
@@ -77,13 +85,6 @@ main{
 .icon:first-child{
     border-left: 3px solid greenyellow; 
     color: white;
-}
-
-.sidebar-icon i{
-    margin-left: 1em;
-    margin-right: .4em;
-    font-size: 1.3em;
-    color: gray; 
 }
 
 .nav-sidebar span{
@@ -134,15 +135,19 @@ main{
     margin: 0 1em;
 }
 
+.sidebar-account img{
+    width: 20px;
+}
 .sidebar-account span:hover{
     color: white;
 }
+
 .download{
     margin-bottom: .6em;
 }
 
-.download i{
-    font-size: .6em;
+.download img{
+    width: 10px;
 }
 
 .account{
@@ -189,6 +194,9 @@ main{
     font-size: .6em;
 }
 
+.btn-upgrade:hover{
+    transform: scale(1.2);
+}
 .btn-upgrade a{
     font-size: .6em;
     color: white;
@@ -208,20 +216,36 @@ main{
     color: gray;
     font-size: .7em;
     font-weight: bold;
-    margin-top: .5em;
+    margin-top: 1em;
     margin-right: 1em;
+}
+
+.main-list a:hover{
+    color: white;
 }
 
 .active{
     border-bottom: 2px solid greenyellow;
 }
 
-.album{
-    height: 300px;
-    border: 1px solid green;
-    
+.title{
+    margin-left: .5em;
+    margin-bottom: 1em;
 }
 
+.album{
+    display: flex;
+    height: 300px;
+    margin-left: .5em;
+    border: 1px solid green;  
+}
+
+.album-card{
+    margin-right: 1em;
+    width: 150px;
+    height: 150px;
+    border: 1px solid gold;
+}
 .created{
     height: 300px;
     border: 1px solid green;
