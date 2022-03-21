@@ -9,7 +9,6 @@
 html{
     font-family: 'Montserrat', sans-serif;
     color: white;
-    text-align: center;
 }
 
 .clearfix::after{
@@ -34,12 +33,44 @@ main{
     height: calc(100vh - 100px) ;
     background-color: black
 }
+
+.logo{
+    width: 150px;
+    padding: 1em;
+}
+
+.sidebar-icon{
+    width: 100%;
+    height: 200px;
+    border: 1px solid green;
+}
+
+/* .border{
+    display: inline-block;
+    border-left: 3px solid greenyellow;
+    height: 30px;
+} */
+
+.icon{
+    margin-bottom: .5em;
+}
+.sidebar-icon i{
+    margin-left: 1em;
+    margin-right: .4em;
+    font-size: 1.3em;
+    color: gray; 
+}
+
+.sidebar-icon span{
+    font-size: .7em;
+    color: gray;
+}
 /* main content */
 .main-content{
     float: left;
     width: calc(100% - 200px);
     height: 100%;
-    background-color: aquamarine;
+    background-color: #141922;
     overflow-y: auto;
 }
 .nav-upgrade{
@@ -53,27 +84,28 @@ main{
 
 .main-list{
     height: 50px;
-    background-color: coral;
     margin-top: 80px;
+    border: 1px solid green;
 }
 
 .album{
     height: 300px;
-    background-color: blueviolet;
+    border: 1px solid green;
+    
 }
 
 .created{
     height: 300px;
-    background-color: lightgreen;
+    border: 1px solid green;
 }
 
 .artist{
     height: 300px;
-    background-color: gold;
+    border: 1px solid green;
 }
 /* FOOTER */
 footer{
     height: 100px;
-    background-color: gray;
+    background-color: #282828;
     width: 100%;
 }
