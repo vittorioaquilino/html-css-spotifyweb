@@ -21,6 +21,11 @@ ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .mb-1{
     margin-bottom: 1em;
 }
@@ -30,13 +35,16 @@ main{
     background-color: rgb(26, 35, 53);
 }
 
+.nav-container{
+    height: 90%;
+}
 /* nav */
 .nav-sidebar{
     float: left;
     width: 200px;
-    height: calc(100vh - 80px) ;
+    height: calc(100vh - 80px);
     background-color: black;
-    color: gray
+    color: gray;
 }
 
 .logo{
@@ -46,17 +54,29 @@ main{
 
 .sidebar-icon{
     width: 100%;
-    border: 1px solid green;
 }
 
-/* .border{
+.nav-container span:hover{
+    color: white;
+}
+
+.nav-container li:hover{
+    color: white;
+}
+
+.border{
     display: inline-block;
-    border-left: 3px solid greenyellow;
     height: 30px;
-} */
+}
 
 .icon{
     margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.icon:first-child{
+    border-left: 3px solid greenyellow; 
+    color: white;
 }
 
 .sidebar-icon i{
@@ -72,9 +92,7 @@ main{
 
 .sidebar-playlist{
     width: 100%;
-    height: 450px;
     margin-left: 1em;
-    border: 1px solid green;
 }
 
 .sidebar-playlist h4{
@@ -102,6 +120,10 @@ main{
     text-align: center;
 }
 
+.playlist{
+    overflow-y: scroll;
+}
+
 .playlist li{
     margin-bottom: 1em;
     font-size: .7em;
@@ -109,12 +131,12 @@ main{
 }
 
 .sidebar-account{
-    width: 80%;
-    /* height: 150px; */
-    margin-left: 1em;
-    border: 1px solid green;
+    margin: 0 1em;
 }
 
+.sidebar-account span:hover{
+    color: white;
+}
 .download{
     margin-bottom: .6em;
 }
@@ -148,6 +170,8 @@ main{
     overflow-y: auto;
 }
 .nav-upgrade{
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
     top: 0;
     right: 0;
@@ -156,10 +180,40 @@ main{
     background-color: rgba(000, 000, 000, .5);
 }
 
+.btn-upgrade{
+    border: 1px solid white;
+    border-radius: 2em;
+    text-align: center;
+    align-self: center;
+    padding: 10px 20px;
+    font-size: .6em;
+}
+
+.btn-upgrade a{
+    font-size: .6em;
+    color: white;
+    line-height: 30px;
+    
+}
 .main-list{
     height: 50px;
     margin-top: 80px;
+    text-align: center;
     border: 1px solid green;
+}
+
+.main-list li{
+    text-transform: uppercase;
+    display: inline-block;
+    color: gray;
+    font-size: .7em;
+    font-weight: bold;
+    margin-top: .5em;
+    margin-right: 1em;
+}
+
+.active{
+    border-bottom: 2px solid greenyellow;
 }
 
 .album{
