@@ -97,6 +97,7 @@ main{
 }
 
 .sidebar-playlist h4{
+    text-align: left;
     color: white;
     margin-bottom: .5em;
 }
@@ -203,6 +204,8 @@ main{
     line-height: 30px;
     
 }
+
+/* main list */
 .main-list{
     height: 50px;
     margin-top: 80px;
@@ -228,29 +231,64 @@ main{
     border-bottom: 2px solid greenyellow;
 }
 
+/* album */
 .title{
-    margin-left: .5em;
+    margin-left: .8em;
     margin-bottom: 1em;
 }
 
 .album{
     display: flex;
     height: 300px;
-    margin-left: .5em;
+    margin-left: .8em;
+    margin-bottom: 2em;
     border: 1px solid green;  
 }
 
 .album-card{
     margin-right: 1em;
-    width: 150px;
-    height: 150px;
+    width: 200px;
     border: 1px solid gold;
 }
+
+.album img{
+    margin-bottom: 1em;
+}
+
+h4{
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.sub-title{
+    font-size: .7em;
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* creatred */
 .created{
-    height: 300px;
+    display: flex;
+    margin-left: .8em;
+    margin-bottom: 2em;
     border: 1px solid green;
 }
 
+.title h3{
+    margin-bottom: .6em;
+}
+
+.title p{
+    font-size: .7em;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.created img{
+    margin-bottom: 1em;
+}
 .artist{
     height: 300px;
     border: 1px solid green;
