@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- style -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- main -->
@@ -61,17 +61,17 @@
                 </div>
                 <!-- /sidebar -->
             </div>
-                <div class="sidebar-account">
-                    <div class="download">
-                        <img src="img/download.svg" alt="">
-                        <span>Installa app</span>
-                    </div>
-                    <div class="account-border"></div>
-                    <div class="account">
-                        <img src="img/profile.svg" alt="">
-                        <span>John Doe</span>
-                    </div>
+            <div class="sidebar-account">
+                <div class="download">
+                    <img src="img/download.svg" alt="">
+                    <span>Installa app</span>
                 </div>
+                <div class="account-border"></div>
+                <div class="account">
+                    <img src="img/profile.svg" alt="">
+                    <span>John Doe</span>
+                </div>
+            </div>
         </nav>
         <!-- sidebar account -->
         <!-- main content -->
@@ -95,7 +95,7 @@
             <div class="title">
                 <h3>Recently played</h3>
             </div>
-            <div class="album">
+            <section class="album">
                 <!-- album card -->
                 <div class="album-card">
                     <img src="img/metal_lifting.jpg" alt="">
@@ -139,13 +139,13 @@
                         Subtitle
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- created -->
             <div class="title">
                 <h3>Creato per John Doe</h3>
                 <p>Più ascolti, più accurati saranno i suggerimenti</p>
             </div>
-            <div class="created">
+            <section class="created">
                 <div class="album-card">
                     <img src="img/radar.jpeg" alt="">
                     <h4>Release Radar</h4>
@@ -154,9 +154,21 @@
                     <img src="img/mixdaily.jpeg" alt="">
                     <h4>Daily Mix 1</h4>
                 </div>
+            </section>
+            <!-- artist -->
+            <div class="title">
+                <h3>Artisti più popolari</h3>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
             </div>
             <div class="artist">
-                artisti
+                <div class="album-card">
+                    <img src="img/youg.jpeg" alt="">
+                    <h4>Lana Del Ray</h4>
+                </div>
+                <div class="album-card">
+                    <img src="img/einaudi.jpeg" alt="">
+                    <h4>Ludovico Einaudi</h4>
+                </div>
             </div>
         </section>
         <!-- /main content -->

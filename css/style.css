@@ -29,6 +29,7 @@ a{
 img{
     width: 100%;
 }
+
 .mb-1{
     margin-bottom: 1em;
 }
@@ -39,7 +40,10 @@ main{
 }
 
 .nav-container{
-    height: 90%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 80px);
+    min-height: 350px;
 }
 /* nav */
 .nav-sidebar{
@@ -123,8 +127,10 @@ main{
 }
 
 .playlist{
-    overflow-y: scroll;
+    height: 100px;
+    overflow-y: auto ;
 }
+
 
 .playlist li{
     margin-bottom: 1em;
@@ -133,12 +139,14 @@ main{
 }
 
 .sidebar-account{
+    height: 80px;
     margin: 0 1em;
 }
 
 .sidebar-account img{
     width: 20px;
 }
+
 .sidebar-account span:hover{
     color: white;
 }
@@ -155,6 +163,11 @@ main{
     margin-bottom: .6em;
 }
 
+.account img{
+    background-color: grey;
+    border-radius: 50%;
+}
+
 .account span{
     color: white;
 }
@@ -167,6 +180,25 @@ main{
 .sidebar-account span{
     font-weight: bold;
 }
+/* media nav-sidebar */
+@media screen and (max-width: 600px){
+    .nav-sidebar{
+        width: 50px;
+    }
+
+    .sidebar-icon span{
+        display: none;
+    }
+
+    .sidebar-playlist{
+        display: none;
+    }
+
+    .sidebar-account span{
+        display: none;
+    }
+}
+
 /* main content */
 .main-content{
     float: left;
@@ -175,6 +207,7 @@ main{
     background-color: #141922;
     overflow-y: auto;
 }
+
 .nav-upgrade{
     display: flex;
     justify-content: flex-end;
@@ -210,7 +243,6 @@ main{
     height: 50px;
     margin-top: 80px;
     text-align: center;
-    border: 1px solid green;
 }
 
 .main-list li{
@@ -242,13 +274,11 @@ main{
     height: 300px;
     margin-left: .8em;
     margin-bottom: 2em;
-    border: 1px solid green;  
 }
 
 .album-card{
     margin-right: 1em;
     width: 200px;
-    border: 1px solid gold;
 }
 
 .album img{
@@ -272,7 +302,6 @@ h4{
     display: flex;
     margin-left: .8em;
     margin-bottom: 2em;
-    border: 1px solid green;
 }
 
 .title h3{
@@ -289,9 +318,21 @@ h4{
 .created img{
     margin-bottom: 1em;
 }
+
 .artist{
+    display: flex;
+    margin-left: .8em;
     height: 300px;
-    border: 1px solid green;
+    margin-bottom: 2em;
+}
+
+.artist img{
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
+
+.album-card img:hover{
+    color: black;
 }
 /* FOOTER */
 footer{
