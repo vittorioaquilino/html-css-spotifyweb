@@ -132,7 +132,7 @@ main{
 
 
 .playlist li{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     font-size: .7em;
     font-weight: bold;
 }
@@ -374,4 +374,50 @@ footer{
     height: 80px;
     background-color: #282828;
     width: 100%;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    margin-left: 1em;
+    border: 1px solid red;
+}
+
+.footer-left img{
+    height: 50px;
+    width: 50px;
+    margin-right: .4em;
+}
+
+.footer-left span{
+    font-size: .6em;
+    color: gray;
+}
+
+.footer-icon{
+    margin-left: 1em;
+}
+
+.footer-icon i{
+    color:gray;
+}
+.footer-center{
+    width: 500px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.footer-right{
+    width: 200px;
+    height: 100%;
+    border: 1px solid red;
 }
