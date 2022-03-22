@@ -356,7 +356,8 @@ h4{
 
     .album-card{
         width: 100px;
-        margin-bottom: 3em;
+        height: 100px;
+        margin-bottom: 4em;
     }
 
     .title{
@@ -385,15 +386,13 @@ footer{
     justify-content: space-between;
     height: 100%;
 }
-
+/* left */
 .footer-left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* width: 200px; */
     height: 100%;
     margin-left: 1em;
-    border: 1px solid red;
 }
 
 .footer-left img{
@@ -419,21 +418,21 @@ footer{
     color:gray;
 }
 
+/* center */
 .footer-center{
     display: flex;
     flex-direction: column;
     width: 500px;
     height: 100%;
-    border: 1px solid red;
 }
-
+/* top */
 .center-top{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 50%;
-    border: 1px solid green;
+    margin-top: .5em;
 }
 
 .center-top i{
@@ -446,11 +445,35 @@ footer{
     line-height: 50%;
     vertical-align: middle;
 }
+
+/* bottom */
 .center-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 50%;
-    border: 1px solid green;
 }
+
+.number{
+    font-size: .6em;
+    font-weight: bold;
+}
+
+.footer-border-1{
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 1em;
+    background-color: gray;
+}
+
+.footer-border-2{
+    width: 25%;
+    border-radius: 1em;
+    border: 2px solid lightgray;
+
+}
+/* right */
 .footer-right{
     width: 200px;
     height: 100%;
