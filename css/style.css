@@ -121,6 +121,10 @@ main{
     background-color: gray;
 }
 
+.box:hover{
+    background-color: white;
+}
+
 #plus{
     color: black;
     font-size: 3em;
@@ -282,6 +286,7 @@ main{
 }
 
 .album-card{
+    position: relative;
     margin-right: 1em;
     width: 200px;
 }
@@ -290,6 +295,17 @@ main{
     margin-bottom: 1em;
 }
 
+.album-card i{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 3em;
+}
+
+.album-card:hover i{
+    display: block;
+}
 h4{
     text-align: center;
     margin-bottom: .5em;
@@ -409,6 +425,16 @@ footer{
 .footer-title{
     margin-right: 2em;
 }
+
+.footer-title span:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-list i:hover{
+    color: white;
+}
+
 .footer-icon{
     margin-left: 1em;
 }
@@ -446,8 +472,13 @@ footer{
     vertical-align: middle;
 }
 
+.center-top i:nth-child(3):hover{
+    transform: scale(1.2);
+}
+
 /* bottom */
 .center-bottom{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -461,21 +492,89 @@ footer{
 }
 
 .footer-border-1{
-    width: 80%;
+    width: 90%;
     border: 1px solid gray;
     border-radius: 1em;
     background-color: gray;
+    margin: 0 2em;
 }
 
 .footer-border-2{
-    width: 25%;
+    width: 30%;
     border-radius: 1em;
     border: 2px solid lightgray;
+}
 
+.footer-circle{
+    display: none;
+    position: absolute;
+    left: 160px;
+    bottom: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.footer-circle-2{
+    display: none;
+    position: absolute;
+    right: 130px;
+    bottom: 32px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.footer-border-1:hover .footer-border-2{
+    border:2px solid greenyellow
+}
+
+.footer-border-1:hover .footer-circle{
+    display: block;
+}
+
+.footer-border-1:hover .footer-circle-2{
+    display: block;
 }
 /* right */
 .footer-right{
-    width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    border: 1px solid red;
+}
+
+.footer-right i{
+    color: white;
+    margin: 0 .2em;
+}
+
+.footer-right .footer-border-1{
+    width: 150px;
+}
+
+.footer-right .footer-border-2{
+    width: 30%;
+}
+
+@media screen and (max-width:600px){
+    footer {
+        width: calc(100% - 150px);
+    }
+
+    .footer-left{
+        width: 20%;
+    }
+
+    .footer-center{
+        width: 60%;
+    }
+
+    .footer-right{
+        width: 20%;
+    }
+    
 }
