@@ -35,6 +35,7 @@ img{
 }
 /* MAIN */
 main{
+    overflow: hidden;
     height: calc(100vh - 80px);
     background-color: rgb(26, 35, 53);
 }
@@ -52,6 +53,7 @@ main{
     height: calc(100vh - 80px);
     background-color: black;
     color: gray;
+    overflow: hidden;
 }
 
 .logo{
@@ -96,6 +98,7 @@ main{
 }
 
 .sidebar-playlist{
+    height: 300px;
     width: 100%;
     margin-left: 1em;
 }
@@ -127,7 +130,8 @@ main{
 }
 
 .playlist{
-    overflow-y: auto ;
+    overflow-y: auto;
+    height: 250px;
 }
 
 
@@ -386,7 +390,7 @@ footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 200px;
+    /* width: 200px; */
     height: 100%;
     margin-left: 1em;
     border: 1px solid red;
@@ -395,7 +399,7 @@ footer{
 .footer-left img{
     height: 50px;
     width: 50px;
-    margin-right: .4em;
+    margin-right: .6em;
 }
 
 .footer-left span{
@@ -403,19 +407,50 @@ footer{
     color: gray;
 }
 
+.footer-title{
+    margin-right: 2em;
+}
 .footer-icon{
     margin-left: 1em;
 }
 
 .footer-icon i{
+    padding: .2em;
     color:gray;
 }
+
 .footer-center{
+    display: flex;
+    flex-direction: column;
     width: 500px;
     height: 100%;
     border: 1px solid red;
 }
 
+.center-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    border: 1px solid green;
+}
+
+.center-top i{
+    color: white;
+    margin: 0 .4em;
+}
+
+.center-top i:nth-child(3){
+    font-size: 2em;
+    line-height: 50%;
+    vertical-align: middle;
+}
+.center-bottom{
+    width: 100%;
+    height: 50%;
+    border: 1px solid green;
+}
 .footer-right{
     width: 200px;
     height: 100%;
