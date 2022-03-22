@@ -127,7 +127,6 @@ main{
 }
 
 .playlist{
-    height: 100px;
     overflow-y: auto ;
 }
 
@@ -180,6 +179,7 @@ main{
 .sidebar-account span{
     font-weight: bold;
 }
+
 /* media nav-sidebar */
 @media screen and (max-width: 600px){
     .nav-sidebar{
@@ -231,6 +231,7 @@ main{
 .btn-upgrade:hover{
     transform: scale(1.2);
 }
+
 .btn-upgrade a{
     font-size: .6em;
     color: white;
@@ -331,9 +332,43 @@ h4{
     border-radius: 50%;
 }
 
-.album-card img:hover{
-    color: black;
+.main-content img:hover{
+    opacity: .3;
 }
+
+/* media main list */
+@media screen and (max-width:600px) {
+    .main-list a{
+        font-size: .6em;
+    }
+}
+
+/* media album */
+@media screen and (max-width:600px) {
+    .album{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .album-card{
+        width: 100px;
+        margin-bottom: 3em;
+    }
+
+    .title{
+        font-size: .4em;
+        margin-bottom: 3em;
+    }
+
+    h4{
+        font-size: .4em;
+    }
+
+    .sub-title{
+        font-size: .4em;
+    }
+}
+
 /* FOOTER */
 footer{
     height: 80px;
