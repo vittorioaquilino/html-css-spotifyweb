@@ -366,6 +366,43 @@ h4{
     font-weight: bold;
 }
 
+/* media query album */
+@media screen and (max-width:600px) {
+    .album{
+        flex-wrap: wrap;
+    }
+
+    .album-card{
+        margin-bottom: 4em;
+        width: calc(100% / 2 - 1em);
+    }
+
+    .title{
+        font-size: .4em;
+        margin-bottom: 3em;
+    }
+
+    h4{
+        font-size: .4em;
+    }
+
+    .sub-title{
+        font-size: .4em;
+    }
+
+    .album-card i{
+        position: absolute;
+        top: 35%;
+    }
+}
+
+/* media query created */
+@media screen and (max-width:600px){
+    .created{
+        flex-wrap: wrap;
+    }
+}
+
 /* creatred */
 .created{
     display: flex;
@@ -410,37 +447,6 @@ h4{
     }
 }
 
-/* media query album */
-@media screen and (max-width:600px) {
-    .album{
-        flex-wrap: wrap;
-    }
-
-    .album-card{
-        margin-bottom: 4em;
-        width: calc(100% / 2 - 1em);
-    }
-
-    .title{
-        font-size: .4em;
-        margin-bottom: 3em;
-    }
-
-    h4{
-        font-size: .4em;
-    }
-
-    .sub-title{
-        font-size: .4em;
-    }
-}
-
-/* media query created */
-@media screen and (max-width:600px){
-    .created{
-        flex-wrap: wrap;
-    }
-}
 
 /* media query artist */
 @media screen and (max-width:600px) {
