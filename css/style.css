@@ -250,6 +250,11 @@ main{
     overflow-y: auto;
 }
 
+@media screen and (max-width:600px){
+    .main-content{
+        width: calc(100% - 50px);
+    }
+}
 /* nav upgrade */
 .nav-upgrade{
     display: flex;
@@ -285,6 +290,7 @@ main{
 @media screen and (max-width: 600px){
     .nav-upgrade{
         width: calc(100% - 50px);
+        z-index: 100;
     }
 }
 /* main list */
@@ -411,9 +417,8 @@ h4{
     }
 
     .album-card{
-        width: 150px;
-        height: 150px;
         margin-bottom: 4em;
+        width: calc(100% / 2 - 1em);
     }
 
     .title{
@@ -562,7 +567,7 @@ footer{
 .footer-circle{
     display: none;
     position: absolute;
-    left: 185px;
+    left: 180px;
     bottom: 10px;
     width: 15px;
     height: 15px;
@@ -618,19 +623,80 @@ footer{
 /* media query footer */
 @media screen and (max-width:600px){
     footer {
-        width: calc(100% - 150px);
+       width: 100%;
     }
 
-    .footer-left{
-        width: 15%;
+    .footer-left .footer-icon{
+        display: none;
     }
 
-    .footer-center{
-        width: 40%;
+    .footer-left h5{
+        font-size: .5em;
+    }
+
+    .footer-left .brano{
+        font-size: .4em;
+    }
+
+    .center-top i{
+        margin: 0 .2em;
+        font-size: .7em;
+    }
+
+    .center-top i:nth-child(3){
+        font-size: 1.5em;
+    }
+
+    .number{
+        font-size: .3em;
+    }
+
+    .footer-border-1{
+        margin: 0 .5em;
+        width: 80%;
+        border: .3px solid gray;
+    }
+
+    .footer-circle{
+        display: none;
+        position: absolute;
+        left: 65px;
+        bottom: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
     }
 
     .footer-right{
-        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
     }
-    
+
+    .footer-right i{
+        margin-top: .5em;
+        font-size: .8em;
+    }
+
+    .footer-right .footer-border-1{
+        width: 80px;
+        margin-bottom: .3em;
+    }
+
+    .footer-right .footer-border-2{
+        width: 30px;
+    }
+
+    .footer-circle-2{
+        display: none;
+        position: absolute;
+        right: 75px;
+        bottom: 12px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+    }
 }
