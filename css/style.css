@@ -34,6 +34,7 @@ img{
 .mb-1{
     margin-bottom: 1em;
 }
+
 /* MAIN */
 main{
     overflow: hidden;
@@ -65,7 +66,7 @@ main{
 .logo-mobile{
     display: none;
 }
-/* media logo */
+/* media query logo */
 @media screen and (max-width:600px) {
     .logo{
         display: none;
@@ -114,6 +115,7 @@ main{
     color: white;
 }
 
+/* media query icon */
 @media screen and (max-width:600px){
     .icon:first-child{
         border-left: 0;
@@ -216,7 +218,7 @@ main{
     font-weight: bold;
 }
 
-/* media nav-sidebar */
+/* media query nav-sidebar */
 @media screen and (max-width: 600px){
     .nav-sidebar{
         width: 50px;
@@ -248,6 +250,7 @@ main{
     overflow-y: auto;
 }
 
+/* nav upgrade */
 .nav-upgrade{
     display: flex;
     justify-content: flex-end;
@@ -279,6 +282,11 @@ main{
     
 }
 
+@media screen and (max-width: 600px){
+    .nav-upgrade{
+        width: calc(100% - 50px);
+    }
+}
 /* main list */
 .main-list{
     height: 50px;
@@ -321,7 +329,7 @@ main{
 .album-card{
     position: relative;
     margin-right: 1em;
-    width: 200px;
+    width: calc(100% / 6);
 }
 
 .album img{
@@ -376,8 +384,7 @@ h4{
 
 .artist{
     display: flex;
-    margin-left: .8em;
-    height: 300px;
+    margin-left: .8em; 
     margin-bottom: 2em;
 }
 
@@ -390,23 +397,22 @@ h4{
     opacity: .3;
 }
 
-/* media main list */
+/* media query main list */
 @media screen and (max-width:600px) {
     .main-list a{
         font-size: .6em;
     }
 }
 
-/* media album */
+/* media query album */
 @media screen and (max-width:600px) {
     .album{
-        display: flex;
         flex-wrap: wrap;
     }
 
     .album-card{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         margin-bottom: 4em;
     }
 
@@ -424,6 +430,19 @@ h4{
     }
 }
 
+/* media query created */
+@media screen and (max-width:600px){
+    .created{
+        flex-wrap: wrap;
+    }
+}
+
+/* media query artist */
+@media screen and (max-width:600px) {
+    .artist{
+        flex-wrap: wrap;
+    }
+}
 /* FOOTER */
 footer{
     height: 80px;
@@ -452,7 +471,7 @@ footer{
     margin-right: .6em;
 }
 
-.footer-left span{
+.footer-left .brano{
     font-size: .6em;
     color: gray;
 }
@@ -461,7 +480,7 @@ footer{
     margin-right: 2em;
 }
 
-.footer-title span:hover{
+.footer-title .brano:hover{
     text-decoration: underline;
     color: white;
 }
@@ -596,6 +615,7 @@ footer{
     width: 50px;
 }
 
+/* media query footer */
 @media screen and (max-width:600px){
     footer {
         width: calc(100% - 150px);
