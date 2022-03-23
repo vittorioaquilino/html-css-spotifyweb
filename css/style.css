@@ -30,6 +30,7 @@ img{
     width: 100%;
 }
 
+/* UTILITY */
 .mb-1{
     margin-bottom: 1em;
 }
@@ -301,6 +302,8 @@ main{
 
 .active{
     border-bottom: 2px solid greenyellow;
+    width: 30px;  
+    margin-left: 1.9em ;
 }
 
 /* album */
@@ -540,7 +543,7 @@ footer{
 .footer-circle{
     display: none;
     position: absolute;
-    left: 160px;
+    left: 185px;
     bottom: 10px;
     width: 15px;
     height: 15px;
@@ -551,7 +554,7 @@ footer{
 .footer-circle-2{
     display: none;
     position: absolute;
-    right: 130px;
+    right: 140px;
     bottom: 32px;
     width: 15px;
     height: 15px;
@@ -590,7 +593,7 @@ footer{
 }
 
 .footer-right .footer-border-2{
-    width: 30%;
+    width: 50px;
 }
 
 @media screen and (max-width:600px){
