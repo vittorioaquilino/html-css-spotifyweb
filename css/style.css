@@ -354,8 +354,9 @@ main{
 .album-card i{
     display: none;
     position: absolute;
-    top: 23%;
-    left: 37%;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 3.5em;
 }
 
