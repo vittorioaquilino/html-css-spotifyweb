@@ -272,12 +272,14 @@ main{
     border-radius: 2em;
     text-align: center;
     align-self: center;
+    margin-right: 1.5em;
     padding: 10px 20px;
     font-size: .6em;
 }
 
 .btn-upgrade:hover{
     transform: scale(1.2);
+    border: 1px solid #16c016;
 }
 
 .btn-upgrade a{
