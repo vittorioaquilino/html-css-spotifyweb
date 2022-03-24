@@ -93,11 +93,11 @@ main{
 }
 
 .nav-container span:hover{
-    color: white;
+    color: #16c016;
 }
 
 .nav-container li:hover{
-    color: white;
+    color: #16c016;
 }
 
 .border{
@@ -152,7 +152,7 @@ main{
 }
 
 .box:hover{
-    background-color: white;
+    background-color: #16c016;
 }
 
 #plus{
@@ -185,7 +185,7 @@ main{
 }
 
 .sidebar-account span:hover{
-    color: white;
+    color: #16c016;
 }
 
 .download{
@@ -311,13 +311,20 @@ main{
 }
 
 .main-list a:hover{
-    color: white;
+    color: #16c016;
 }
 
 .active{
     border-bottom: 2px solid greenyellow;
     width: 30px;  
     margin-left: 1.9em ;
+}
+
+@media screen and (max-width: 600px){
+    .active{
+        width: 15px;
+        margin-left: 1.4em;
+    }
 }
 
 /* album */
@@ -352,6 +359,10 @@ main{
 
 .album-card:hover i{
     display: block;
+}
+
+.album-card h4:hover{
+    color: #16c016;
 }
 
 h4{
@@ -493,11 +504,11 @@ footer{
 
 .footer-title .brano:hover{
     text-decoration: underline;
-    color: white;
+    color: #16c016;
 }
 
-.footer-list i:hover{
-    color: white;
+.footer-left i:hover{
+    color: #16c016;
 }
 
 .footer-icon{
