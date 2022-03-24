@@ -354,9 +354,9 @@ main{
 .album-card i{
     display: none;
     position: absolute;
-    top: 25%;
-    left: 40%;
-    font-size: 3em;
+    top: 23%;
+    left: 37%;
+    font-size: 3.5em;
 }
 
 .album-card:hover i{
