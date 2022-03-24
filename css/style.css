@@ -317,7 +317,7 @@ main{
 .active{
     border-bottom: 2px solid greenyellow;
     width: 30px;  
-    margin-left: 1.9em ;
+    margin-left: 2em ;
 }
 
 @media screen and (max-width: 600px){
